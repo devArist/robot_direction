@@ -5,6 +5,10 @@ from rest_framework.response import Response
 # Create your views here.
 
 @api_view(['GET'])
+def index(request):
+    return Response({'message': 'Bienvenue sur notre API'})
+
+@api_view(['GET'])
 def devant(request):
     return Response({'message': 'OK'})
 
